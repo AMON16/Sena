@@ -1,0 +1,78 @@
+body{
+    background: linear-gradient(90deg, hsl(224, 43%, 19%) 0%, rgb(97, 216, 196) 100%);  
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+}
+
+/* div principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65vh;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.15); /* Fondo semitransparente */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* título */
+.title_login h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* inputs */
+.container input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 40vh;
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente */
+    border: 1px solid white;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+.container ::placeholder{
+    color: rgba(255, 255, 255, 0.4);;
+}
+
+/* botón Ingresar */
+.container button {
+    padding: 10px 20px;
+    color: hsl(224, 43%, 25%);
+    font-weight: 600;
+    text-shadow: 2px 2px 5px gray;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(51, 51, 51, 0.5);
+    cursor: pointer;
+    margin-top: 10px;
+}
+.container button:hover {
+    background: linear-gradient(90deg, hsl(224, 43%, 25%) 0%, rgb(56, 174, 156) 100%);
+    color: white;
+}
+
+
+/* link de Registrar */
+.container p {
+    color: white;
+}
+
+.container a {
+    color: hsl(224, 43%, 25%);
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+    color: black;
+}
