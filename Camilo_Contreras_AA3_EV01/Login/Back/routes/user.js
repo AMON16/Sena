@@ -3,6 +3,23 @@ import pool from '../db.js';
 
 const router = Router();
 
+
+//validaciones de email en registro
+router.post('/register', async (req, res) => {
+    const { email, password } = req.body;
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    try {
+        if (!emailRegex.test(email)) {
+            return res.status(400).send({ error: 'ERROR, ingrese un correo electrónico válido' });
+        }
+
+    } catch (error) {
+        res.status(500).send({ error: 'Error al registrar el usuario' });
+    }
+});
+
 //validaciones de registro
 router.post('/register', async (req, res) => {
     const { email, password } = req.body;

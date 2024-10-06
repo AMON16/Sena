@@ -43,8 +43,8 @@ function Register() {
                 </div>
                 <div>
                     <input
-                        placeholder="Ingrese usuario"
-                        type="text"
+                        placeholder="Ingrese email"
+                        type="email"
                         value={email}
                         onChange={cambiarEmail}
                     />

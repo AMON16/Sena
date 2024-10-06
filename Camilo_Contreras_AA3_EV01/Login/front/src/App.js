@@ -38,7 +38,7 @@ function App() {
           <div>
             <input
               placeholder="Ingrese usuario"
-              type="text"
+              type="email"
               value={usuario}
               onChange={cambiarUsuario}
             />
